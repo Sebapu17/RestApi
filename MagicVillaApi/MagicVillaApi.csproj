@@ -11,6 +11,20 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Modelos\" />
+    <None Remove="Modelos\Dto\" />
+    <None Remove="Datos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Modelos\" />
+    <Folder Include="Modelos\Dto\" />
+    <Folder Include="Datos\" />
+  </ItemGroup>
 </Project>
